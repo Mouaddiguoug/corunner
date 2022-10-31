@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{169E4CF5-C78A-423E-88F8-A82C54930EB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coruner</RootNamespace>
+    <AssemblyName>Coruner</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\NoteBook\NoteBook\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\Compagnie voyage mode deconnecté\Compagnie voyage mode deconnecté\bin\Debug\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitConfirm.Designer.cs">
+      <DependentUpon>ExitConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HowToPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HowToPlay.Designer.cs">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YouLose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YouLose.Designer.cs">
+      <DependentUpon>YouLose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YouWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YouWin.Designer.cs">
+      <DependentUpon>YouWin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitConfirm.resx">
+      <DependentUpon>ExitConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HowToPlay.resx">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YouLose.resx">
+      <DependentUpon>YouLose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YouWin.resx">
+      <DependentUpon>YouWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platform.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104453_orig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coronavirus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-mask %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\needle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\058-tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngkey.com-game-characters-png-3044483.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_masks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box_vaccin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coruner Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gate_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gate_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\037-award.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\027-favourite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gate-of-india.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3687414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3658058.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.refresh.counterclockwise.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loss-job-illustration_23-2148581492.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.controller.xbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.hardcover.open.writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.information.circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.navigate.next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.navigate.previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow up to bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-fighting-virus-with-shield-comic-characters_24908-62674.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b23a8130b03eff475be26b2275ebfc19-covid-19-man-character-icon-by-vexels.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
